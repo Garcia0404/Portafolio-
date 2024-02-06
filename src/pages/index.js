@@ -1,0 +1,5 @@
+export * from './router/AppRouter'
+export * from './homePage/HomePage'
+export * from './proyects/Proyects'
+export * from './contact/Contact'
+export * from './homePage/components/header/Navbar'
