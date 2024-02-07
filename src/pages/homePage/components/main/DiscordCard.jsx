@@ -1,23 +1,23 @@
 import React from 'react'
-import userbg from '../../../../assets/userbg.png'
+import userbg from '../../../../assets/hollow.mp4'
 import myphoto from '../../../../assets/mifoto.jpeg'
 
 
 export const DiscordCard = () => {
   return (
-    <section className='bg-blackMain rounded-xl flex flex-col w-72 overflow-hidden shadow-xl h-full m-auto tablet:my-auto tablet:mx-0 min-h-[700px] drop-shadow-[0_0_0.3rem_#EE8886]'>
-      <div className="h-24 w-full overflow-hidden">
-        <img className='-translate-y-1/3' src={userbg} alt="userBg" />
+    <section className='bg-blackMain rounded-xl flex flex-col w-72 tablet:w-80 overflow-hidden shadow-xl h-full m-auto tablet:my-auto tablet:mx-0 min-h-[680px] drop-shadow-[0_0_0.5rem_#30072D]'>
+      <div className="h-28 w-full overflow-hidden">
+        <video className='object-cover h-full w-full' src={userbg} muted loop autoPlay></video>
       </div>
-      <div className='absolute ms-4 mt-16 h-16 w-16 rounded-full border-[3px] border-blackMain'>
+      <div className='absolute ms-4 mt-[70px] h-20 w-20 rounded-full border-[3px] border-blackMain'>
         <div className='rounded-full overflow-hidden object-cover'>
           <img src={myphoto} alt="user" />
         </div>
-        <span className='absolute bottom-0 right-0 w-5 h-5 border-[3px] border-blackMain rounded-full bg-green-600'></span>
+        <span className='absolute bottom-0 right-0 w-5 h-5 border-[3px] border-blackMain rounded-full bg-green-600 drop-shadow-[0_0_0.1rem_#16A34A]'></span>
       </div>
       <div className='flex mt-8 grow'>
         <div className='flex flex-col text-white p-4 bg-[#111214] grow m-3 rounded-md'>
-          <h2 className=''>Julio García</h2>
+          <h2>Julio García</h2>
           <div className='flex border-b border-blackMain items-center pb-3 gap-1'>
             <span>
               <svg className='h-3 w-3 fill-grayTxt' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
@@ -39,26 +39,26 @@ export const DiscordCard = () => {
             <span className='font-extralight'>10 oct 2023</span>
           </span>
 
-          <h3 className='font-bold mt-2 mb-1'>ROLES</h3>
+          <h3 className='font-bold mt-2 mb-1'>MIS SKILLS</h3>
           <div className='flex flex-wrap gap-2 font-light'>
             <span className='bg-grayBtn flex rounded-md px-2.5 gap-1 py-px items-center'>
-              <span className='h-3 w-3 bg-[#149ECA] rounded-full'></span>
+              <span className='h-3 w-3 bg-[#149ECA] drop-shadow-[0_0_0.1rem_#149ECA] rounded-full'></span>
               <span>React</span>
             </span>
             <span className='bg-grayBtn flex rounded-md px-2.5 gap-1 py-px items-center'>
-              <span className='h-3 w-3 bg-[#F7E025] rounded-full'></span>
+              <span className='h-3 w-3 bg-[#F7E025] drop-shadow-[0_0_0.1rem_#F7E025] rounded-full'></span>
               <span>JavaScript</span>
             </span>
             <span className='bg-grayBtn flex rounded-md px-2.5 gap-1 py-px items-center'>
-              <span className='h-3 w-3 bg-[#3EBFF8] rounded-full'></span>
+              <span className='h-3 w-3 bg-[#3EBFF8] drop-shadow-[0_0_0.1rem_#3EBFF8] rounded-full'></span>
               <span>TailwindCSS</span>
             </span>
             <span className='bg-grayBtn flex rounded-md px-2.5 gap-1 py-px items-center'>
-              <span className='h-3 w-3 bg-[#0870C2] rounded-full'></span>
+              <span className='h-3 w-3 bg-[#0870C2] drop-shadow-[0_0_0.1rem_#0870C2] rounded-full'></span>
               <span>CSS</span>
             </span>
             <span className='bg-grayBtn flex rounded-md px-2.5 gap-1 py-px items-center'>
-              <span className='h-3 w-3 bg-[#E4552D] rounded-full'></span>
+              <span className='h-3 w-3 bg-[#E4552D] drop-shadow-[0_0_0.1rem_#E4552D] rounded-full'></span>
               <span>HTML</span>
             </span>
             <span className='bg-grayBtn flex rounded-md px-2.5 gap-1 py-px items-center'>
@@ -70,7 +70,7 @@ export const DiscordCard = () => {
           <p className='font-extralight'>Hecho con React y TailwindCSS</p>
 
           <form className='mt-auto self-end w-full border border-blackMain'>
-            <input className='font-light rounded-sm w-full px-3 py-2 text-blackMain bg-transparent' type="text" placeholder='Escribe un mensaje ...' />
+            <input className='font-light rounded-sm w-full px-3 py-2 text-whiteMain bg-transparent' type="text" placeholder='Escribe un mensaje ...' />
           </form>
         </div>
       </div>
