@@ -1,7 +1,10 @@
 import React from 'react'
+import { CardProyect } from './components/CardProyect'
 
 export const Proyects = () => {
   return (
-    <div>Proyects</div>
+    <div>
+      <CardProyect></CardProyect>
+    </div>
   )
 }
