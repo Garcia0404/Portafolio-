@@ -15,6 +15,7 @@ export default {
       screens:{
         'tablet':'768px',
         'mobileL':'500px',
+        'mobileXL':'600px',
       },
       gridTemplateColumns: {
         '1img': 'repeat(auto-fill, minmax(1fr, 500px))',
