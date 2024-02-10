@@ -9,17 +9,17 @@ export const DiscordCard = () => {
   } 
   const variants = {
     hidden:{
-      x:100,
+      y:100,
       opacity:0,
     },
     visible:{
-      x:0,
+      y:0,
       opacity:1,
     }
   }
   return (
     <motion.section 
-      className='bg-blackMain rounded-xl flex flex-col w-72 tablet:w-80 overflow-hidden shadow-xl h-full m-auto tablet:my-auto tablet:mx-0 min-h-[680px] drop-shadow-[0_0_0.5rem_#30072D]'
+      className='bg-blackMain rounded-xl flex flex-col w-72 tablet:w-80 overflow-hidden shadow-xl h-full m-auto tablet:my-auto tablet:mx-0 min-h-[650px] drop-shadow-[0_0_0.5rem_#30072D]'
       variants={variants}
       initial='hidden'
       animate='visible'
@@ -57,11 +57,6 @@ export const DiscordCard = () => {
             <li>&#62; De Lima</li>
             <li>&#62; 23 años</li>
           </ul>
-
-          <h3 className='font-bold mt-2 mb-1'>MIEMBRO DESDE</h3>
-          <span>
-            <span className='font-extralight'>10 oct 2023</span>
-          </span>
 
           <h3 className='font-bold mt-2 mb-1'>MIS SKILLS</h3>
           <div className='flex flex-wrap gap-2 font-light'>
